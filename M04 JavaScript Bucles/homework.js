@@ -87,12 +87,19 @@ function esDiezOCinco(num) {
    // Retornar "true" si "num" es 10 o 5.
    // De lo contrario, retornar "false".
    // Tu código:
+    if ( num === 10 || num === 5){
+    return true
+    }else{return false}; 
 }
 
 function estaEnRango(num) {
    // Retornar "true" si "num" es menor que 50 y mayor que 20.
    // De lo contrario, retornar "false".
    // Tu código:
+   if( num < 50 && num > 20){
+      return true 
+   } else { return false
+   }
 }
 
 function esEntero(num) {
@@ -102,15 +109,27 @@ function esEntero(num) {
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna "false".
    // Tu código:
+   if (num === Math.round (num)) {
+      return true;
+   } else { return false}
 }
 
 function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // Si "num" es divisible entre 3, retorna "fizz".
    // Si "num" es divisible entre 5, retorna "buzz".
-   // De lo contrario, retorna el número.
+   // De lo contrario, retorna numero.
    // Tu código:
-}
+   if (num % 3 === 0 && num % 5 === 0){
+      return "fizzbuzz";
+   } else if ( num % 3 === 0) {
+      return "fizz";
+   } else if ( num % 5 === 0) {
+      return "buzz"; 
+   } 
+      return numero
+   }
+
 
 function operadoresLogicos(num1, num2, num3) {
    // La función recibe tres números distintos.
@@ -120,6 +139,10 @@ function operadoresLogicos(num1, num2, num3) {
    // Si alguno de los argumentos es cero, retornar ---> "Error".
    // Si no se cumple ninguna de las condiciones anteriores, retornar false.
    // Tu código:
+   if ( num1 > num2 && num > num3 && num1 > 0) return "Numero 1 es mayor y positivo";
+   if (num1 < 0 && num2 < 0 & num3 < 0) return "Hay negativos";
+   
+
 }
 
 function esPrimo(num) {
