@@ -118,17 +118,14 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // Si "num" es divisible entre 3, retorna "fizz".
    // Si "num" es divisible entre 5, retorna "buzz".
+   // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna numero.
    // Tu código:
-   if (num % 3 === 0 && num % 5 === 0){
-      return "fizzbuzz";
-   } else if ( num % 3 === 0) {
-      return "fizz";
-   } else if ( num % 5 === 0) {
-      return "buzz"; 
-
-   } return numero
-   }
+   if ( num % 3 === 0 && num % 5 === 0) return "fizzbuzz";
+   if ( num % 3 === 0) return "fizz";
+   if (num % 5 === 0) return "buzz";
+    return numero
+}
 
 
 function operadoresLogicos(num1, num2, num3) {
@@ -178,6 +175,11 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
+   let nuevoNum = num.toString ()
+
+   if (nuevoNum.length === 3){
+       return true }
+       else  { return false }
 }
 
 function doWhile(num) {
@@ -185,7 +187,12 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-}
+   let i = 0
+   do { num += 5
+   i++ 
+} while(i < 8) {
+   return num}
+   }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
 module.exports = {
